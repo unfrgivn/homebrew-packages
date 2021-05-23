@@ -28,3 +28,10 @@ shasum -a 256 ~/Downloads/cig-sdk-0.1.1.tar.gz | awk $1 '{print $1}'
 - `url`
 - `sha256` 
 - version number in test
+
+
+## Testing 
+
+```
+brew install --build-from-source cig-sdk
+```

@@ -1,8 +1,8 @@
 class CigSdk < Formula
   desc "CLI to deploy CIG Dev Tools"
   homepage "https://github.com/itcig/cig-sdk"  
-  url "https://github.com/itcig/cig-sdk/archive/v0.1.1.tar.gz"
-  sha256 "593aa9aaa1b5ea189d629b818cfaa4134b07bfa03017f1165d7eb8a37eae412f"
+  url "https://github.com/itcig/cig-sdk/archive/v0.1.2.tar.gz"
+  sha256 "ed65f6a65911db4db66199f78e87a7cd6f80fe25174354e4855e900b9b6f9e46"
   head "https://github.com/itcig/cig-sdk.git"
   depends_on "ansible"
   depends_on "docker"
@@ -20,6 +20,6 @@ class CigSdk < Formula
 
   # Homebrew requires tests.
   test do
-    assert_match "CIG SDK 0.1.1", shell_output("#{bin}/cig version", 2)
+    assert_match "CIG SDK 0.1.2", shell_output("#{bin}/cig version", 2)
   end
 end
