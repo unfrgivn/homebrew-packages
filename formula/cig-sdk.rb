@@ -4,6 +4,7 @@ class CigSdk < Formula
   url "https://github.com/itcig/cig-sdk/archive/v0.1.2.tar.gz"
   sha256 "ed65f6a65911db4db66199f78e87a7cd6f80fe25174354e4855e900b9b6f9e46"
   head "https://github.com/itcig/cig-sdk.git"
+
   depends_on "ansible"
   depends_on "docker"
   depends_on "python@3.9"
@@ -15,7 +16,7 @@ class CigSdk < Formula
               "CIG_SDK_DIR='#{prefix}'"
 
     # system "./bin/brew-install" 
-    bin.install "bin/cig-sdk" => "cig"
+    bin.install_symlink "bin/cig-sdk" => "cig"
   end
 
   # Homebrew requires tests.
