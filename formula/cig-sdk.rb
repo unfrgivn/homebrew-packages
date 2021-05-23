@@ -1,5 +1,3 @@
-require "formula"
-
 class CigSdk < Formula
   desc "CLI to deploy CIG Dev Tools"
   homepage "https://github.com/itcig/cig-sdk"  
@@ -8,16 +6,16 @@ class CigSdk < Formula
   head "https://github.com/itcig/cig-sdk.git"
   depends_on "ansible"
   depends_on "docker"
-  depends_on "python"
+  depends_on "python@3.9"
 
   def install    
     # Set correct working directory
-    inreplace "bin/cig",
+    inreplace "bin/cig-sdk",
               "CIG_SDK_DIR='/usr/local/cig-sdk'",
               "CIG_SDK_DIR='#{prefix}'"
 
     # system "./bin/brew-install" 
-    bin.install "bin/cig"
+    bin.install "bin/cig-sdk" => "cig"
   end
 
   # Homebrew requires tests.
