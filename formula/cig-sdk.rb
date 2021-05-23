@@ -1,6 +1,6 @@
 require "formula"
 
-class Cig < Formula
+class CigSdk < Formula
   desc "CLI to deploy CIG Dev Tools"
   homepage "https://github.com/itcig/cig-sdk"
   
