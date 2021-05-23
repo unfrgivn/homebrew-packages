@@ -16,11 +16,11 @@ class CigSdk < Formula
               "CIG_SDK_DIR='#{prefix}'"
 
     # system "./bin/brew-install" 
-    bin.install_symlink "bin/cig-sdk" => "cig"
+    bin.install_symlink "bin/cig-sdk"
   end
 
   # Homebrew requires tests.
   test do
-    assert_match "CIG SDK 0.1.2", shell_output("#{bin}/cig version", 2)
+    assert_match "CIG SDK 0.1.2", shell_output("#{bin}/cig-sdk version", 2)
   end
 end
