@@ -16,7 +16,7 @@ class CigSdk < Formula
               "CIG_SDK_DIR='#{prefix}'"
 
     # system "./bin/brew-install" 
-    bin.install "bin/cig-sdk"
+    bin.install "bin/cig-sdk" => "cig"
   end
 
   # Homebrew requires tests.
