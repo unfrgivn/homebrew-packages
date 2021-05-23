@@ -9,7 +9,6 @@ class CigSdk < Formula
   head "https://github.com/itcig/cig-sdk.git"
   depends_on "ansible"
   depends_on "docker"
-  depends_on "docker-sync"
   depends_on "python3"
   depends_on "pip"
   depends_on "ruby"
