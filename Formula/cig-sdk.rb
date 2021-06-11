@@ -15,6 +15,10 @@ class CigSdk < Formula
               "CIG_SDK_DIR='/usr/local/cig-sdk'",
               "CIG_SDK_DIR='#{prefix}'"
     
+    inreplace "bin/brew-install",
+              "CIG_SDK_DIR='/usr/local/cig-sdk'",
+              "CIG_SDK_DIR='#{prefix}'"
+
     bin.install "bin/cig-sdk" => "cig"
     libexec.install Dir["*"]
 
