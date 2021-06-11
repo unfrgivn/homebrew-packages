@@ -1,8 +1,8 @@
 class CigSdk < Formula
   desc "CLI to deploy CIG Dev Tools"
   homepage "https://github.com/itcig/cig-sdk"  
-  url "https://github.com/itcig/cig-sdk/archive/v0.1.2.tar.gz"
-  sha256 "ed65f6a65911db4db66199f78e87a7cd6f80fe25174354e4855e900b9b6f9e46"
+  url "https://github.com/itcig/cig-sdk/archive/v0.1.3.tar.gz"
+  sha256 "e490670275a1e383d420fffb593d372d5f8691e466ef8b5065bb3e00a380986e"
   head "https://github.com/itcig/cig-sdk.git", branch: "main"
 
   depends_on "ansible"
