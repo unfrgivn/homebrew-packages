@@ -18,7 +18,7 @@ class CigSdk < Formula
     bin.install "bin/cig-sdk" => "cig"
     libexec.install Dir["*"]
 
-    system "./bin/brew-install" 
+    system "./bin/brew-install"
   end
 
   # Homebrew requires tests.
