@@ -9,7 +9,7 @@ Then: -->
 ```
 brew tap itcig/tools
   
-brew install cig
+brew install itcig/tools/cig-sdk
 ```
 
 
