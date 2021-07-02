@@ -18,9 +18,10 @@ class CigSdk < Formula
     inreplace "bin/brew-install",
               "CIG_SDK_DIR='/usr/local/cig-sdk'",
               "CIG_SDK_DIR='#{prefix}'"
-
+    
+    prefix.install "ansible"
+    prefix.install "docker"
     bin.install "bin/cig-sdk" => "cig"
-    libexec.install Dir["*"]
 
     system "./bin/brew-install"
   end
