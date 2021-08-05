@@ -21,7 +21,7 @@ class CigSdk < Formula
     
     prefix.install "ansible"
     prefix.install "docker"
-    bin.install "bin/cig"
+    bin.install "bin/cig-sdk" => "cig"
     bin.install "bin/cig-sdk"
 
     system "./bin/brew-install"
