@@ -23,7 +23,7 @@ class CigSdk < Formula
     prefix.install "docker"
     bin.install "bin/cig-sdk" => "cig"
 
-    system "./bin/brew-install"
+    system "bash bin/brew-install"
   end
 
   # Homebrew requires tests.
